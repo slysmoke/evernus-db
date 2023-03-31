@@ -34,6 +34,9 @@ jobs:
        # Runs a single command using the runners shell
     - name: Decompress db
       run: bzip2 -d sqlite-latest.sqlite.bz2
+      
+    - name: Del old db
+      run: rm -rf eve.db
         
         # Runs a single command using the runners shell
     - name: Patch db
