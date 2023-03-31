@@ -37,6 +37,7 @@ jobs:
         # Runs a single command using the runners shell
     - name: Patch db
       run: ./update_sde.sh sqlite-latest.sqlite eve.db
+      shell: bash
         
 
 
