@@ -23,7 +23,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
 
 
       # Runs a single command using the runners shell
