@@ -37,7 +37,7 @@ jobs:
       
     - name: Del old db
       run: |
-        rm -rf eve.db,
+        rm -rf eve.db
         sqlite3 eve.db "VACUUM;"
         
         # Runs a single command using the runners shell
@@ -61,5 +61,6 @@ jobs:
         git config --global user.name 'Git bot'
         git config --global user.email 'bot@noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git add -A
         git commit -a -m "Automated database update"
         git push
