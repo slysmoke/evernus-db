@@ -36,7 +36,9 @@ jobs:
       run: bzip2 -d sqlite-latest.sqlite.bz2
       
     - name: Del old db
-      run: rm -rf eve.db
+      run: |
+        rm -rf eve.db,
+        sqlite3 eve.db "VACUUM;"
         
         # Runs a single command using the runners shell
     - name: Patch db
