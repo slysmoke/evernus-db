@@ -35,7 +35,7 @@ jobs:
             bzip2 -d sqlite-latest.sqlite.bz2
             ./update_sde.sh sqlite-latest.sqlite eve.db
             echo "Updating version"
-            sed -i "s/\(\"sdeVersion\":\)[^,]*\(\s*\)/\1\"$remote_md5\"\2/" latest_version.json
+            sed -i "s/\(\"sdeVersion\":\)[^}]*\(\s*\)}/\1\"$remote_md5\"\2}/" latest_version.json
             rm -rf sqlite-latest.sqlite
             rm -rf sqlite-latest.sqlite.bz
             
