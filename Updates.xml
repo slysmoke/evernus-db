@@ -6,16 +6,16 @@
   <Name>Evernus</Name>
   <DisplayName>Evernus</DisplayName>
   <Description/>
-  <Version>3.98</Version>
+  <Version>4.0</Version>
   <ReleaseDate>2023-04-02</ReleaseDate>
   <Script>installscript.qs</Script>
   <ForcedInstallation>true</ForcedInstallation>
   <Default>true</Default>
   <Essential>true</Essential>
-  <UpdateFile UncompressedSize="106017494" OS="Any" CompressedSize="38531726"/>
+  <UpdateFile CompressedSize="38528842" UncompressedSize="106016982" OS="Any"/>
   <DownloadableArchives>bin.7z</DownloadableArchives>
-  <SHA1>d3f776bfea987859ef3cc5e81b948edcfdff7c6d</SHA1>
+  <SHA1>64253536bbbc5a5cd4f33a3fa3f716732f88bffc</SHA1>
  </PackageUpdate>
- <SHA1>5400f4ea68c1670fbc72a19c750493852b353ec9</SHA1>
- <MetadataName>2023-04-02-1705_meta.7z</MetadataName>
+ <SHA1>e23f9a7b77789ce6388efdd764a478e4af8dde76</SHA1>
+ <MetadataName>2023-04-02-1714_meta.7z</MetadataName>
 </Updates>
