@@ -12,10 +12,10 @@
   <ForcedInstallation>true</ForcedInstallation>
   <Default>true</Default>
   <Essential>true</Essential>
-  <UpdateFile OS="Any" UncompressedSize="106017494" CompressedSize="38521648"/>
+  <UpdateFile CompressedSize="38534383" UncompressedSize="106017494" OS="Any"/>
   <DownloadableArchives>bin.7z</DownloadableArchives>
-  <SHA1>7591137b6498f8aef1920a7bc64bdb77f51f98d3</SHA1>
+  <SHA1>dd680612e196c504bb4605ec71cdbb620b8a4e24</SHA1>
  </PackageUpdate>
- <SHA1>7285ad615b62d504b5e636c0f8e9dc05e2e35b39</SHA1>
- <MetadataName>2023-04-02-1645_meta.7z</MetadataName>
+ <SHA1>3164f5c1821359c19817cb7e5d9a82a07338dd14</SHA1>
+ <MetadataName>2023-04-02-1700_meta.7z</MetadataName>
 </Updates>
