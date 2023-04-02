@@ -1,0 +1,21 @@
+<Updates>
+ <ApplicationName>{AnyApplication}</ApplicationName>
+ <ApplicationVersion>1.0.0</ApplicationVersion>
+ <Checksum>true</Checksum>
+ <PackageUpdate>
+  <Name>Evernus</Name>
+  <DisplayName>Evernus</DisplayName>
+  <Description/>
+  <Version>3.98</Version>
+  <ReleaseDate>2023-04-02</ReleaseDate>
+  <Script>installscript.qs</Script>
+  <ForcedInstallation>true</ForcedInstallation>
+  <Default>true</Default>
+  <Essential>true</Essential>
+  <UpdateFile CompressedSize="38532658" OS="Any" UncompressedSize="106016982"/>
+  <DownloadableArchives>bin.7z</DownloadableArchives>
+  <SHA1>486ea94c9fb86a6787ebb21dedc8d798250f4039</SHA1>
+ </PackageUpdate>
+ <SHA1>f6eb177f89559e0bb03d655fd2edf3df2847f12f</SHA1>
+ <MetadataName>2023-04-02-1623_meta.7z</MetadataName>
+</Updates>
