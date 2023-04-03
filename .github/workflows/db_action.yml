@@ -28,14 +28,14 @@ jobs:
     - name: Patch db
       run: |
         remote_md5=$(curl -s https://www.fuzzwork.co.uk/dump/sqlite-latest.sqlite.bz2.md5 | cut -d ' ' -f 1 )
-        local_md5=$(grep -o '"sdeVersion":"[^"]*"' latest_version.json | sed 's/"sdeVersion":"\([^"]*\)"/\1/')
+        local_md5=$(grep -o '"sdeVersion": "[^"]*"' latest_version.json | sed 's/"sdeVersion": "\([^"]*\)"/\1/')
         if [ "$remote_md5" != "$local_md5" ]; then
             echo "Files are different. Proceeding to next step..."
             curl -s -o sqlite-latest.sqlite.bz2 https://www.fuzzwork.co.uk/dump/sqlite-latest.sqlite.bz2
             bzip2 -d sqlite-latest.sqlite.bz2
             ./update_sde.sh sqlite-latest.sqlite eve.db
             echo "Updating version"
-            sed -i "s/\(\"sdeVersion\":\)[^}]*\(\s*\)}/\1\"$remote_md5\"\2}/" latest_version.json
+            sed -i "s/\(\"sdeVersion\": \)[^}]*\(\s*\)}/\1\"$remote_md5\"\2}/" latest_version.json
             rm -rf sqlite-latest.sqlite
             rm -rf sqlite-latest.sqlite.bz
             
