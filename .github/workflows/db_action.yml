@@ -3,8 +3,8 @@
 name: eve.db cleaner
 
 on:
-  schedule:
-    - cron: "0 18 * * *"
+  #schedule:
+   # - cron: "0 18 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
