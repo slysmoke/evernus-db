@@ -19,8 +19,8 @@ jobs:
          
       run: |
         python3 -m pip install -r requirements.txt
-    - name: Run citade_update.py
-      run: python3 citade_update.py
+    - name: Run citadel_update.py
+      run: python3 citadel_update.py
     - name: Git Commit
       run: |
         git config --global user.name 'Git bot'
