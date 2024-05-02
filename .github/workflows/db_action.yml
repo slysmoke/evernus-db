@@ -1,0 +1,33 @@
+name: Evernus Database update
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+    - name: Install dependencies
+    
+         
+      run: |
+        python3 -m pip install -r requirements.txt
+    - name: Run db_action.py
+      run: python3 db_action.py
+    - name: Git Commit
+      run: |
+        git config --global user.name 'Git bot'
+        git config --global user.email 'bot@noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git add -A
+        git commit -a -m "Automatic database update"
+        git push
+      shell: bash
+
