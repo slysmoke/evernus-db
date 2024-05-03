@@ -21,20 +21,23 @@ jobs:
         python3 -m pip install -r requirements.txt
     - name: Run db_action.py
       run: python3 db_action.py
+
+    - name: Check if there are any changes
+      id: verify_diff
+      run: |
+        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
+        
     - name: Git Commit
+      if: steps.verify_diff.outputs.changed == 'true'
       run: |
         git config --global user.name 'Git bot'
         git config --global user.email 'bot@noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git add -A
         git commit -a -m "Automatic database update"
-        if git diff
-        then
-            git push
-            
-        fi
-        else
-            echo "No changes"
-        fi
+        git push
+        
+        
       shell: bash
 
