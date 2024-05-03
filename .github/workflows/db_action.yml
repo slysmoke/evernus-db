@@ -28,11 +28,13 @@ jobs:
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git add -A
         git commit -a -m "Automatic database update"
-        if git diff --quiet
+        if git diff
         then
-            echo "No changes to commit, exiting."
-            exit 0
+            git push
+            
         fi
-        git push
+        else
+            echo "No changes"
+        fi
       shell: bash
 
