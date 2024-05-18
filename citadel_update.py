@@ -61,15 +61,16 @@ def save_structures_to_json():
             for v in (d.get("name"), d.get("solar_system_id"), d.get("region_id"))
         ):
             structure = {
-                "firstSeen": d.get("last_seen_public_structure"),
-                "lastSeen": d.get("last_structure_get"),
-                "name": d.get("name"),
-                "public": d.get("is_public_structure"),
-                "regionId": d.get("region_id"),
-                "regionName": get_region_name(d.get("region_id")),
-                "systemId": d.get("solar_system_id"),
-                "systemName": get_system_name(d.get("solar_system_id")),
-                "typeId": d.get("type_id"),
+                "firstSeen": d.get("last_seen_public_structure")
+                or "1970-01-01T00:00:00.000Z",
+                "lastSeen": d.get("last_structure_get") or "1970-01-01T00:00:00.000Z",
+                "name": d.get("name") or "Unknown",
+                "public": d.get("is_public_structure") or 0,
+                "regionId": d.get("region_id") or 0,
+                "regionName": get_region_name(d.get("region_id")) or "None",
+                "systemId": d.get("solar_system_id") or 0,
+                "systemName": get_system_name(d.get("solar_system_id")) or "None",
+                "typeId": d.get("type_id") or 0,
                 "typeName": d.get("typeName", ""),
             }
             result[d["structure_id"]] = structure
