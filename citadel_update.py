@@ -59,7 +59,7 @@ def save_structures_to_json():
         if not any(
             v is None
             for v in (d.get("name"), d.get("solar_system_id"), d.get("region_id"))
-        ):
+        ) and d.get("is_market_structure", False):
             structure = {
                 "firstSeen": d.get("last_seen_public_structure")
                 or "1970-01-01T00:00:00.000Z",
@@ -78,7 +78,5 @@ def save_structures_to_json():
     with open("citadel.json", "w") as f:
         json.dump(result, f, separators=(",", ":"))
 
-
 save_structures_to_json()
-
 
