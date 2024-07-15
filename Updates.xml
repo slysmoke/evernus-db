@@ -6,28 +6,28 @@
   <Name>Evernus</Name>
   <DisplayName>Evernus</DisplayName>
   <Description/>
-  <Version>4.4</Version>
-  <ReleaseDate>2024-07-14</ReleaseDate>
+  <Version>4.5</Version>
+  <ReleaseDate>2024-07-15</ReleaseDate>
   <Script>installscript.qs</Script>
   <ForcedInstallation>true</ForcedInstallation>
   <Default>true</Default>
   <Essential>true</Essential>
-  <UpdateFile OS="Any" CompressedSize="49125290" UncompressedSize="116512114"/>
+  <UpdateFile CompressedSize="49128313" UncompressedSize="116512114" OS="Any"/>
   <DownloadableArchives>bin.7z</DownloadableArchives>
-  <SHA1>b2ed6e77b305dca565caa2255dc58d6f9913b9cf</SHA1>
+  <SHA1>ebf5190227c72f8c535d7f644bb9ea42c3e840a3</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>RuntimeLibs</Name>
   <DisplayName>RuntimeLibs</DisplayName>
   <Description/>
-  <Version>4.4</Version>
-  <ReleaseDate>2024-07-14</ReleaseDate>
+  <Version>4.5</Version>
+  <ReleaseDate>2024-07-15</ReleaseDate>
   <ForcedInstallation>true</ForcedInstallation>
   <Virtual>true</Virtual>
-  <UpdateFile OS="Any" CompressedSize="2243357" UncompressedSize="7753520"/>
+  <UpdateFile CompressedSize="2243356" UncompressedSize="7753520" OS="Any"/>
   <DownloadableArchives>bin.7z</DownloadableArchives>
-  <SHA1>6136a57f6d6408400a3635600b7060b66e3f51b5</SHA1>
+  <SHA1>c975379fe86b0f5a0c8650c80b81a20c593c9dea</SHA1>
  </PackageUpdate>
- <SHA1>5dcf323c781d6754d974e1e55e44fd4949243062</SHA1>
- <MetadataName>2024-07-15-0133_meta.7z</MetadataName>
+ <SHA1>34b2f892356dcb53303116c7dcfcd226cce36dd4</SHA1>
+ <MetadataName>2024-07-15-0439_meta.7z</MetadataName>
 </Updates>
