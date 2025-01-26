@@ -3,4 +3,5 @@
 
 ![example workflow](https://github.com/slysmoke/evernus-db/actions/workflows/citadel.yml/badge.svg)
 
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/slysmoke/evernus-db/latest/total)
+[![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/slysmoke/evernus-db/latest/total)](https://img.shields.io/github/downloads/slysmoke/evernus-db/latest/eve.db
+)
