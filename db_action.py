@@ -168,7 +168,7 @@ def main():
     download_reference_data()
     data = read_types_json_from_reference_data()
     market_group_data = read_market_groups_json_from_reference_data()
-    md5sum = check_md5sum(market_group_data)
+    md5sum = check_md5sum(data)
 
     with open(r"latest_version.json", "r") as f:
         latest_version = json.load(f)
