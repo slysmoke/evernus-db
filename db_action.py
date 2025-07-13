@@ -147,7 +147,7 @@ def insert_into_inv_types(data):
                 d.get("group_id"),
                 d.get("name", {}).get("en"),
                 d.get("description", {}).get("en"),
-                d.get("volume"),
+                d.get("packaged_volume"),
                 d.get("capacity"),
                 d.get("portion_size"),
                 d.get("race_id"),
